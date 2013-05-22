@@ -1,5 +1,8 @@
 package com.touchableheroes.android.db.tmpl;
 
+import java.util.Map;
+import java.util.Map.Entry;
+
 /**
  * @author Andreas Siebert, ask@touchableheroes.com
  */
@@ -19,6 +22,15 @@ public class Query {
 		
 		return this;
 	}
+	
+	public Query append( final Map<String, Object> values) {
+		for (final Entry<String, Object> entry : values.entrySet()) {
+			append( entry.getKey(), entry.getValue() );
+		}
+		
+		return this;
+	}
+	
 	
 	public String sql() {
 		return this.buffer.toString();
