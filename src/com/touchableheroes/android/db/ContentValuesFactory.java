@@ -4,6 +4,12 @@ import android.content.ContentValues;
 
 import com.touchableheroes.android.db.fields.Column;
 
+/**
+ * 
+ * @author Andreas Siebert, ask@touchableheroes.com
+ * 
+ * @param <T>
+ */
 public class ContentValuesFactory<T extends Column> {
 
 	private final ContentValues values = new ContentValues();

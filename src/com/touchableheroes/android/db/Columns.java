@@ -6,8 +6,7 @@ import com.touchableheroes.android.db.log.Logger;
 
 
 /**
- * 
- * @author asiebert
+ * @author Andreas Siebert, ask@touchableheroes.com
  * 
  * @param <T>
  */
